@@ -12,6 +12,15 @@ body {
   height: 100%;
 }
 
+#crsr {
+  position: absolute;
+  width: 3%;
+  height: 6%;
+  border: 1px solid rgba(255, 255, 255, 0.474);
+  border-radius: 50%;
+  /* mix-blend-mode: difference; */
+  transform: translate(-50%, -50%);
+}
 #loader {
   width: 100%;
   height: 100%;
@@ -97,6 +106,108 @@ body {
 
 #page1 {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: #151515;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
 }
+
+#brand {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 15%;
+  height: 10%;
+  position: fixed;
+  left: 4vw;
+  overflow-y: hidden;
+}
+#menu {
+  /* background-color: red; */
+  height: 2vh;
+  width: 40%;
+}
+#logo {
+  width: 50%;
+  height: 80%;
+  /* background-color: red; */
+}
+
+.nav-flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  height: 18%;
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-bottom: 2vw; */
+  /* background-color: orange; */
+}
+
+#nav-content {
+  /* background-color: yellow; */
+  /* height: 200%; */
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-left: auto;
+  padding-left: 2vw;
+  overflow-y: hidden;
+}
+#nav-content-left {
+  width: 40%;
+  height: 100%;
+  gap: 5vw;
+  overflow-y: hidden;
+  /* background-color: white; */
+}
+
+#nav-content-left h1 {
+  font-weight: 300;
+  font-size: 1vw;
+}
+#nav-content-right {
+  width: 20%;
+  overflow-y: hidden;
+  /* background-color: blue; */
+}
+
+#nav-content-right h2 {
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+#page1 #hero {
+  width: 50%;
+  padding-top: 5%;
+  height: calc(100% - 18%);
+  /* background-color: red; */
+  margin: auto;
+}
+
+#page1 #hero #hero-text {
+  overflow-y: hidden;
+}
+#page1 #hero #hero-text h1 {
+  font-weight: 600;
+  font-size: 6vw;
+  text-transform: uppercase;
+}
+
+#hero #hero-text:nth-child(3) h1:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  font-weight:lighter;
+}
+
+/* #page2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+} */
